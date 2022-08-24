@@ -23,6 +23,7 @@ public class DemoController {
     @ResponseStatus(HttpStatus.CREATED)
     public int createEmployee(@RequestBody final Employee employee) {
         Employee createdEmployee = employeeRepository.save(employee);
+        System.out.println("Git hub is version control tool");
         return createdEmployee.getId();
     }
 
@@ -36,6 +37,7 @@ public class DemoController {
     @ResponseStatus(HttpStatus.OK)
     public Employee updateEmployee(@PathVariable("id") final int id,
                                    @RequestBody final Employee employee) {
+        System.out.println("Git hub is version control tool");
         Employee employee1 = employeeRepository.findById(id).get();
         employee1.setName(employee.getName());
         employee1.setEmail(employee.getEmail());
