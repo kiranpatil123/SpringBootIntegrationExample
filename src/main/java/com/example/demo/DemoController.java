@@ -29,6 +29,7 @@ public class DemoController {
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Employee getEmployee(@PathVariable("id") final int id) {
+        System.out.println("Adding additional logger");
         return employeeRepository.findById(id).get();
     }
 
