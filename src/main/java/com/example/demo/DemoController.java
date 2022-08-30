@@ -49,4 +49,19 @@ public class DemoController {
     public void deleteEmployee(@PathVariable("id") final int id) {
         employeeRepository.delete(employeeRepository.findById(id).get());
     }
+    public void myMethod(){
+        System.out.println("hello");
+    }
+
+    public void myMethod1(){
+        System.out.println("hi");
+    }
+
+    public void myMethod2(){
+        System.out.println("hell");
+    }
+
+    public void myMethod3(){
+        System.out.println("hello1");
+    }
 }

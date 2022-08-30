@@ -23,6 +23,9 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
+    - name: sonar cloud
+      run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=cef12cc1e1d997bdff20e92d09154e149e055892 -Dsonar.organization=kiranpatil123 -Dsonar.projectKey=kiranpatil123_SpringBootIntegrationExample
+
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
