@@ -64,4 +64,20 @@ public class DemoController {
     public void myMethod3(){
         System.out.println("hello1");
     }
+
+    public void myMethod4(){
+        System.out.println("hello");
+    }
+
+    public void myMethod5(){
+        System.out.println("hi");
+    }
+
+    public void myMethod6(){
+        System.out.println("hell");
+    }
+
+    public void myMethod7(){
+        System.out.println("hello1");
+    }
 }
