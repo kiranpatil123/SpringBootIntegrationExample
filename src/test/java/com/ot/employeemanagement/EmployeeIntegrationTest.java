@@ -1,7 +1,9 @@
-package com.example.demo;
+package com.ot.employeemanagement;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ot.employeemanagement.employee.domain.Employee;
+import com.ot.employeemanagement.employee.repository.EmployeeRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,7 +20,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class DemoIntegrationTest {
+public class EmployeeIntegrationTest {
     private static final String EMPLOYEE_PATH = "/api/v1/employees";
 
     @Autowired
